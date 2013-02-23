@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGame">
+    <property name="title">
+     <string>Game</string>
+    </property>
+    <addaction name="actionStart_Game"/>
+    <addaction name="actionStart_Server"/>
+    <addaction name="actionPC_Console_Start"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionShow_Hide_Menu"/>
+    <addaction name="actionFull_Screen"/>
+    <addaction name="actionMinimize_to_System_Tray"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionConfigure"/>
+    <addaction name="actionGeneral_Overview"/>
+    <addaction name="actionCard_Overview"/>
+    <addaction name="actionScenario_Overview"/>
+    <addaction name="actionView_Ban_List"/>
+    <addaction name="actionRole_Assign_table"/>
+    <addaction name="separator"/>
+    <addaction name="actionBroadcast"/>
+    <addaction name="actionAI_Melee"/>
+    <addaction name="actionReplay_File_Convert"/>
+    <addaction name="actionCrypto_Audio"/>
+    <addaction name="actionDecrypto_Audio"/>
+    <addaction name="separator"/>
+    <addaction name="actionEnable_Hotkey"/>
+    <addaction name="actionExpand_Dashboard"/>
+    <addaction name="actionView_Discarded"/>
+    <addaction name="actionView_Distance"/>
+    <addaction name="actionServer_Information"/>
+    <addaction name="actionSurrender"/>
+    <addaction name="actionKick"/>
+    <addaction name="actionSave_Record"/>
+   </widget>
+   <widget class="QMenu" name="menuDIY">
+    <property name="title">
+     <string>DIY</string>
+    </property>
+    <addaction name="actionCard_Editor"/>
+    <addaction name="actionScript_Editor"/>
+    <addaction name="actionPackaging"/>
+   </widget>
+   <widget class="QMenu" name="menuCheat">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Cheat</string>
+    </property>
+    <addaction name="actionGet_Card"/>
+    <addaction name="actionChange_General"/>
+    <addaction name="actionDamage_Maker"/>
+    <addaction name="actionDeath_Note"/>
+    <addaction name="actionRevive_Wand"/>
+    <addaction name="actionSend_Low_Level_Command"/>
+    <addaction name="actionExecute_Script_at_Server_Side"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Qt"/>
+    <addaction name="actionAbout_Lua"/>
+    <addaction name="actionAbout_fmod"/>
+    <addaction name="actionAcknowledgement"/>
+   </widget>
+   <addaction name="menuGame"/>
+   <addaction name="menuView"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuDIY"/>
+   <addaction name="menuCheat"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionStart_Game">
+   <property name="text">
+    <string>Start Game</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionStart_Server">
+   <property name="text">
+    <string>Start Server</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionPC_Console_Start">
+   <property name="text">
+    <string>PC Console Start</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionShow_Hide_Menu">
+   <property name="text">
+    <string>Show Hide Menu</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+M</string>
+   </property>
+  </action>
+  <action name="actionFull_Screen">
+   <property name="text">
+    <string>Full Screen</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Return</string>
+   </property>
+  </action>
+  <action name="actionMinimize_to_System_Tray">
+   <property name="text">
+    <string>Minimize to System Tray</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="actionConfigure">
+   <property name="text">
+    <string>Configure</string>
+   </property>
+  </action>
+  <action name="actionGeneral_Overview">
+   <property name="text">
+    <string>General Overview</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionCard_Overview">
+   <property name="text">
+    <string>Card Overview</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionScenario_Overview">
+   <property name="text">
+    <string>Scenario Overview</string>
+   </property>
+  </action>
+  <action name="actionView_Ban_List">
+   <property name="text">
+    <string>View Ban List</string>
+   </property>
+  </action>
+  <action name="actionRole_Assign_table">
+   <property name="text">
+    <string>Role Assign table</string>
+   </property>
+  </action>
+  <action name="actionBroadcast">
+   <property name="text">
+    <string>Broadcast</string>
+   </property>
+  </action>
+  <action name="actionAI_Melee">
+   <property name="text">
+    <string>AI Melee</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionReplay_File_Convert">
+   <property name="text">
+    <string>Replay File Convert</string>
+   </property>
+  </action>
+  <action name="actionCrypto_Audio">
+   <property name="text">
+    <string>Crypto Audio</string>
+   </property>
+  </action>
+  <action name="actionDecrypto_Audio">
+   <property name="text">
+    <string>Decrypto Audio</string>
+   </property>
+  </action>
+  <action name="actionEnable_Hotkey">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Enable Hotkey</string>
+   </property>
+  </action>
+  <action name="actionExpand_Dashboard">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Expand Dashboard</string>
+   </property>
+  </action>
+  <action name="actionView_Discarded">
+   <property name="text">
+    <string>View Discarded</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionView_Distance">
+   <property name="text">
+    <string>View Distance</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionServer_Information">
+   <property name="text">
+    <string>Server Information</string>
+   </property>
+  </action>
+  <action name="actionSurrender">
+   <property name="text">
+    <string>Surrender</string>
+   </property>
+  </action>
+  <action name="actionKick">
+   <property name="text">
+    <string>Kick</string>
+   </property>
+  </action>
+  <action name="actionSave_Record">
+   <property name="text">
+    <string>Save Record</string>
+   </property>
+  </action>
+  <action name="actionCard_Editor">
+   <property name="text">
+    <string>Card Editor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionScript_Editor">
+   <property name="text">
+    <string>Script Editor</string>
+   </property>
+  </action>
+  <action name="actionPackaging">
+   <property name="text">
+    <string>Packaging</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionGet_Card">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Get Card</string>
+   </property>
+  </action>
+  <action name="actionChange_General">
+   <property name="text">
+    <string>Change General</string>
+   </property>
+  </action>
+  <action name="actionDamage_Maker">
+   <property name="text">
+    <string>Damage Maker</string>
+   </property>
+  </action>
+  <action name="actionDeath_Note">
+   <property name="text">
+    <string>Death Note</string>
+   </property>
+  </action>
+  <action name="actionRevive_Wand">
+   <property name="text">
+    <string>Revive Wand</string>
+   </property>
+  </action>
+  <action name="actionSend_Low_Level_Command">
+   <property name="text">
+    <string>Send Low Level Command</string>
+   </property>
+  </action>
+  <action name="actionExecute_Script_at_Server_Side">
+   <property name="text">
+    <string>Execute Script at Server Side</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionAbout_Lua">
+   <property name="text">
+    <string>About Lua</string>
+   </property>
+  </action>
+  <action name="actionAbout_fmod">
+   <property name="text">
+    <string>About fmod</string>
+   </property>
+  </action>
+  <action name="actionAcknowledgement">
+   <property name="text">
+    <string>Acknowledgement</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
